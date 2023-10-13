@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+
+:root{
+    --fonte01:  'Rubik', sem serifa;
+    --fonte02:  'Young Serif', serif;
+
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+}
+
+header{
+    background-image: url(imagens/banner02.jfif);
+   height: 150px;
+   text-align: center;
+}
+
+header > h1{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-variant: small-caps;
+    font-family: var(--fonte01);
+   font-size: 3em;
+    
+}
+
+header > p{
+    font-weight: 400;
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(79, 16, 16);
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgba(16, 177, 13, 0.75);
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte02);
+    font-size: 1.5em;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.conteudo{
+background-color: white
+}
+
+section.imagem{
+    background-color: #1B8AD3;
+    background-position: right center;
+    background-size: cover;
+    box-shadow: inset 1px 1px  5px rgba(0, 0, 0, 0.468);
+    background-attachment: fixed;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+}
+
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.526);
+    width: 400px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.72);
+    color: white;
+    padding: 10px;
+}
+
+
+footer{
+    background-color: #1B8AD3;
+    text-align: center;
+    color: #ff4101;
+    font-weight: bolder;
+}
